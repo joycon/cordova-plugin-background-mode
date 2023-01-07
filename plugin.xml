@@ -23,7 +23,6 @@
     <!-- cordova -->
     <engines>
         <engine name="cordova" version=">=3.0.0" />
-        <engine name="android-sdk" version=">=16" />
     </engines>
 
     <!-- js -->
@@ -76,6 +75,7 @@
 
         <config-file target="AndroidManifest.xml" parent="/manifest">
             <uses-permission android:name="android.permission.WAKE_LOCK" />
+            <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
         </config-file>
 
         <source-file
